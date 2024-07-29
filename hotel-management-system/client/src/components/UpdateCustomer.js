@@ -22,7 +22,7 @@ const UpdateCustomer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/customers/update/${room_id}`, formData);
+      await axios.put(`https://hotel-management-system-curd.onrender.com/api/customers/update/${room_id}`, formData);
       alert('Customer updated successfully!');
       setRoomId('');
       setFormData({
