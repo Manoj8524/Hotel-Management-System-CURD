@@ -22,7 +22,7 @@ const AddCustomer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/customers/add', formData);
+      await axios.post('https://hotel-management-system-curd.onrender.com/api/customers/add', formData);
       alert('Customer added successfully!');
       setFormData({
         room_id: '',
