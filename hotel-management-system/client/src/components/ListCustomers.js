@@ -8,7 +8,7 @@ const ListCustomers = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/customers');
+        const response = await axios.get('https://hotel-management-system-curd.onrender.com/api/customers');
         setCustomers(response.data);
       } catch (err) {
         console.error(err);
