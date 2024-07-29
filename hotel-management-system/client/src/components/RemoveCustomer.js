@@ -8,7 +8,7 @@ const RemoveCustomer = () => {
   const handleRemove = async (e) => {
     e.preventDefault();
     try {
-      await axios.delete(`http://localhost:5000/api/customers/delete/${room_id}`);
+      await axios.delete(`https://hotel-management-system-curd.onrender.com/api/customers/delete/${room_id}`);
       alert('Customer removed successfully!');
       setRoomId('');
     } catch (err) {
